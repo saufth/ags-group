@@ -58,10 +58,10 @@ export default function About () {
           <div className='flex flex-col items-start sm:items-start gap-y-6'>
             <div className='font-primary space-y-6'>
               <Balancer as='h1' className='leading-[1.15] text-[42px] sm:text-6xl font-semibold sm:leading-none'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Transformamos visiones en realidades
               </Balancer>
               <Balancer as='p' className='text-sm sm:text-lg font-medium md:pr-32'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia magni reprehenderit error, quo nulla quia asperiores doloremque iste.
+                Tu visión es nuestra misión, y tu éxito, nuestro propósito supremo.
               </Balancer>
             </div>
             <Button className='mt-2 sm:mt-4 font-medium' color='primary' size='lg'>

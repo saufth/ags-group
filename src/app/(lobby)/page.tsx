@@ -54,7 +54,7 @@ export default function Home () {
                 {siteConfig.description}
               </Balancer>
               <Balancer as='p' className='text-sm sm:text-lg font-medium md:pr-32'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia magni reprehenderit error, quo nulla quia asperiores doloremque iste.
+                Transforma tu negocio con estrategias innovadoras y personalizadas.
               </Balancer>
             </div>
             <Button className='mt-2 sm:mt-4 font-medium' color='primary' size='lg'>
