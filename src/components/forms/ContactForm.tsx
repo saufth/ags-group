@@ -78,7 +78,7 @@ export default function ContactForm () {
             />
           </div>
           <Button
-            className='w-full sm:w-auto mt-2 sm:mt-4 font-medium bg-primary'
+            className='w-full sm:w-auto mt-2 sm:mt-4 font-medium'
             size='lg'
             type='submit'
             disabled={isSendButtonDisabled}
