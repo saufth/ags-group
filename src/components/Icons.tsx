@@ -226,7 +226,7 @@ export const Icons = {
       </svg>
     )
   },
-  MarketStudy: (props: SVGProps<SVGSVGElement>) => {
+  BusinessConsulting: (props: SVGProps<SVGSVGElement>) => {
     return (
       <svg
         width={50}
@@ -241,7 +241,7 @@ export const Icons = {
       </svg>
     )
   },
-  BusinessConsulting: (props: SVGProps<SVGSVGElement>) => {
+  MarketStudy: (props: SVGProps<SVGSVGElement>) => {
     return (
       <svg
         width={50}
@@ -255,7 +255,7 @@ export const Icons = {
       </svg>
     )
   },
-  ProjectManagement: (props: SVGProps<SVGSVGElement>) => {
+  DataAnalisys: (props: SVGProps<SVGSVGElement>) => {
     return (
       <svg
         width={50}
@@ -271,7 +271,7 @@ export const Icons = {
       </svg>
     )
   },
-  DataAnalisys: (props: SVGProps<SVGSVGElement>) => {
+  ProjectManagement: (props: SVGProps<SVGSVGElement>) => {
     return (
       <svg
         width={50}
