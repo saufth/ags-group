@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 56 0% 20%;
+    --card-foreground: 0 0% 98%;
+    --popover: 56 0% 20%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 2% 20%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 56 0% 20%;
+    --card-foreground: 0 0% 98%;
+    --popover: 56 0% 20%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 2% 20%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border text-foreground;
+  }
+
+  p {
+    @apply tracking-wider;
+  }
+
+  ::-webkit-scrollbar {
+    @apply h-3 w-1.5 bg-primary/60;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+    -webkit-border-radius: 1ex;
+  }
+
+  ::-webkit-scrollbar-corner {
+    @apply bg-primary;
+  }
+}
+
+@layer utilities {
+  .text-h1 {
+    @apply leading-[1.15] text-4xl sm:text-6xl font-semibold sm:leading-none;
+  }
+
+  .text-h2 {
+    @apply text-[26px] sm:text-4xl font-medium;
+  }
+
+  .text-h3 {
+    @apply text-xl sm:text-2xl font-medium;
+  }
+}

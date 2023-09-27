@@ -1,0 +1,13 @@
+'use client'
+// Components
+import { ThemeProvider as NextThemeProvider } from 'next-themes'
+// Types
+import { type ThemeProviderProps } from 'next-themes/dist/types'
+
+export default function ThemeProvider ({ children, ...props }: ThemeProviderProps) {
+  return (
+    <NextThemeProvider {...props}>
+      {children}
+    </NextThemeProvider>
+  )
+}
