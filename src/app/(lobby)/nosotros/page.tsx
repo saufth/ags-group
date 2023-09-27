@@ -22,38 +22,31 @@ const aboutUs = [
 const values = [
   {
     heading: 'Innovación',
-    description: 'No nos conformamos con lo común. Nos esforzamos por pensar diferente, rompiendo moldes y dando vida a soluciones frescas y eficaces.',
-    Icon: () => <Icons.Excellence className='w-8 sm:w-10 h-auto fill-primary' />
+    description: 'No nos conformamos con lo común. Nos esforzamos por pensar diferente, rompiendo moldes y dando vida a soluciones frescas y eficaces.'
   },
   {
     heading: 'Creatividad',
-    description: 'Nuestra pasión reside en el pensamiento original. Cada idea que surge es un reflejo de nuestra dedicación a imaginar lo inimaginable.',
-    Icon: () => <Icons.Teamwork className='w-8 sm:w-10 h-auto fill-primary' />
+    description: 'Nuestra pasión reside en el pensamiento original. Cada idea que surge es un reflejo de nuestra dedicación a imaginar lo inimaginable.'
   },
   {
     heading: 'Visión Disruptiva',
-    description: 'Más allá de seguir las tendencias, nos esforzamos por ser pioneros. Rompemos las normas cuando es necesario, todo en nombre de una mejora significativa y revolucionaria.',
-    Icon: () => <Icons.Progress className='w-8 sm:w-10 h-auto fill-primary' />
+    description: 'Más allá de seguir las tendencias, nos esforzamos por ser pioneros. Rompemos las normas cuando es necesario, todo en nombre de una mejora significativa y revolucionaria.'
   },
   {
     heading: 'Mentalidad Abierta',
-    description: 'El mundo está en constante cambio, y nosotros estamos listos para adaptarnos. Apreciamos las nuevas perspectivas y las acogemos con brazos abiertos.',
-    Icon: () => <Icons.Innovation className='w-8 sm:w-10 h-auto fill-primary' />
+    description: 'El mundo está en constante cambio, y nosotros estamos listos para adaptarnos. Apreciamos las nuevas perspectivas y las acogemos con brazos abiertos.'
   },
   {
     heading: 'Pensamiento Expansivo',
-    description: 'No hay límites para nuestro pensamiento. Nos aventuramos más allá de las fronteras convencionales, siempre buscando ampliar nuestros horizontes.',
-    Icon: () => <Icons.Innovation className='w-8 sm:w-10 h-auto fill-primary' />
+    description: 'No hay límites para nuestro pensamiento. Nos aventuramos más allá de las fronteras convencionales, siempre buscando ampliar nuestros horizontes.'
   },
   {
     heading: 'Originalidad',
-    description: 'Para nosotros, lo ordinario no es suficiente. Nos esforzamos por ser genuinos en todo lo que hacemos, creando soluciones auténticas y sin precedentes.',
-    Icon: () => <Icons.Innovation className='w-8 sm:w-10 h-auto fill-primary' />
+    description: 'Para nosotros, lo ordinario no es suficiente. Nos esforzamos por ser genuinos en todo lo que hacemos, creando soluciones auténticas y sin precedentes.'
   },
   {
     heading: 'Perspectiva Divergente',
-    description: 'Sabemos que no existe una única respuesta. Por eso, valoramos la exploración desde diferentes ángulos, asegurando que cada solución sea completa y bien fundamentada.',
-    Icon: () => <Icons.Integrity className='w-8 sm:w-10 h-auto fill-primary' />
+    description: 'Sabemos que no existe una única respuesta. Por eso, valoramos la exploración desde diferentes ángulos, asegurando que cada solución sea completa y bien fundamentada.'
   }
 ] as const
 
@@ -147,7 +140,6 @@ export default function About () {
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-16 px-4 sm:px-0'>
             {values.map((value, key) => (
               <div className='flex flex-col items-center gap-y-2 text-center' key={key}>
-                <value.Icon />
                 <Balancer as='h3' className='text-h3'>
                   {value.heading}
                 </Balancer>
@@ -157,7 +149,7 @@ export default function About () {
               </div>
             ))}
           </div>
-          <Icons.Values className='w-sm sm:w-xl md:w-3xl h-auto absolute -bottom-24 -right-24 md:-right-0 md:-bottom-96 -rotate-12 fill-primary opacity-10' />
+          <Icons.Logomark className='w-sm sm:w-xl md:w-3xl h-auto absolute -bottom-24 -right-24 md:-right-0 md:-bottom-96 fill-primary opacity-10' />
         </div>
       </section>
       <section>

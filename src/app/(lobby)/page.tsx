@@ -9,37 +9,37 @@ const services = [
   {
     heading: 'Marketing',
     description: 'Las herramientas y equipo industrial cumplen con estándares de calidad y durabilidad para soportar el uso intensivo en el entorno de construcción. Ofrecemos una amplia gama de herramientas manuales, equipos eléctricos y mecánicos, máquinas especializadas, y dispositivos de precisión que son esenciales para diversas aplicaciones industriales. ',
-    image: '/images/marketing.webp'
+    Icon: () => <Icons.Marketing className='w-full h-auto fill-primary' />
   },
   {
     heading: 'Branding',
     description: 'Ponemos a su servicio la renta de torno CNC, fresadora, prensa hidráulica, máquina de inyección de plástico, cizalla industrial, caldera industrial, equipo de soldadura, grúa, máquina de embalaje, máquina de impresión industrial, compresores y generadores de energía. Garantizamos el óptimo funcionamiento de nuestro equipo industrial con los mejores resultados.',
-    image: '/images/branding.webp'
+    Icon: () => <Icons.Branding className='w-11/12 h-auto fill-primary' />
   },
   {
     heading: 'Consultoría en ventas',
     description: 'Trajes de Protección diseñados para proteger contra riesgos químicos, biológicos, radiológicos o nucleares (CBRN), cascos de protección, protección auditiva, guantes y gafas de seguridad, máscaras faciales, equipos de protección personal para soldadura, mantas y cortinas ignífugas, equipo de lluvia, etc.',
-    image: '/images/salesConsulting.webp'
+    Icon: () => <Icons.SalesConsulting className='w-full h-auto fill-primary' />
   },
   {
     heading: 'Consultoría de negocios',
     description: 'Nos enfocamos en la prevención, diagnóstico y corrección de problemas técnicos, con el objetivo de maximizar la disponibilidad de los activos industriales y prolongar su vida útil.',
-    image: '/images/businessConsulting.webp'
+    Icon: () => <Icons.MarketStudy className='w-full h-auto fill-primary' />
   },
   {
     heading: 'Estudio de mercado',
     description: 'Ofrecemos una selección completa de materiales de construcción esenciales, como cemento, mortero, varillas de refuerzo, mallas metálicas y otros productos necesarios para proyectos de construcción y remodelación.',
-    image: '/images/marketStudy.webp'
+    Icon: () => <Icons.BusinessConsulting className='w-full h-auto fill-primary' />
   },
   {
     heading: 'Investigación y análisis de datos',
     description: 'Proporcionamos a los profesionales de la construcción las herramientas y equipos necesarios para llevar a cabo proyectos de construcción de manera exitosa, garantizando la eficiencia, seguridad y calidad en cada tarea.',
-    image: '/images/dataAnalisys.webp'
+    Icon: () => <Icons.ProjectManagement className='w-full h-auto fill-primary' />
   },
   {
     heading: 'Desarrollo y gestión de proyectos',
     description: 'Ponemos a su disposición maquinaria pesada como tornos, fresadoras, prensas hidráulicas, máquinas de inyección de plástico, cortadoras láser, máquinas de soldadura y más, utilizadas en procesos de fabricación y producción.',
-    image: '/images/projectManagement.webp'
+    Icon: () => <Icons.DataAnalisys className='w-full h-auto fill-primary' />
   }
 ] as const
 
@@ -120,7 +120,9 @@ export default function Home () {
             {services.map((service, key) => {
               return (
                 <article className='flex flex-col items-center md:items-start gap-y-2' key={key}>
-                  <Icons.Logomark className='w-10 h-auto fill-primary' />
+                  <div className='w-12 h-12 p-2.5 flex justify-center items-center bg-muted rounded-xl'>
+                    <service.Icon />
+                  </div>
                   <div className='px-2 space-y-2 text-center md:text-left'>
                     <Balancer as='h3' className='text-h3'>
                       {service.heading}
