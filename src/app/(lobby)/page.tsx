@@ -120,7 +120,7 @@ export default function Home () {
             {services.map((service, key) => {
               return (
                 <article className='flex flex-col items-center md:items-start gap-y-2' key={key}>
-                  <div className='w-12 h-12 p-2.5 flex justify-center items-center bg-muted rounded-xl'>
+                  <div className='w-10 sm:w-12 h-10 sm:h-12 p-2.5 flex justify-center items-center bg-muted rounded-xl'>
                     <service.Icon />
                   </div>
                   <div className='px-2 space-y-2 text-center md:text-left'>
