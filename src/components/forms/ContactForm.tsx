@@ -66,9 +66,9 @@ export default function ContactForm () {
         onSubmit={sendEmail}
         ref={formRef}
       >
-        <Input type='text' label='Nombre' min={6} max={128} required />
-        <Input type='email' label='Correo electrónico' min={8} max={128} required />
-        <Textarea defaultValue='' placeholder='Cuéntanos acerca de tu proyecto' min={6} max={512} required />
+        <Input color='secondary' type='text' label='Nombre' min={6} max={128} required />
+        <Input color='secondary' type='email' label='Correo electrónico' min={8} max={128} required />
+        <Textarea color='secondary' placeholder='Cuéntanos acerca de tu proyecto' min={6} max={512} required />
         <div className='flex justify-center' />
         <div className='flex flex-col items-center gap-y-8'>
           <div className='max-w-fit'>
