@@ -77,7 +77,7 @@ export default function About () {
             width={1260}
             height={840}
           />
-          <div className='absolute inset-0 bg-black/30 sm:bg-black/10' />
+          <div className='absolute inset-0 bg-black/30' />
         </div>
       </section>
       <section className='max-w-7xl mx-auto pb-12 lg:pb-24 px-4 sm:px-6 space-y-8 md:space-y-16'>
