@@ -57,7 +57,7 @@ export default function About () {
         <div className='h-xl px-4 md:px-6 mx-auto pt-16 relative'>
           <div className='flex flex-col items-start sm:items-start gap-y-6'>
             <div className='font-primary space-y-6'>
-              <Balancer as='h1' className='leading-[1.15] text-[42px] sm:text-6xl font-semibold sm:leading-none'>
+              <Balancer as='h1' className='text-h1'>
                 Transformamos visiones en realidades
               </Balancer>
               <Balancer as='p' className='text-sm sm:text-lg font-medium md:pr-32'>
