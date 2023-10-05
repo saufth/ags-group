@@ -88,9 +88,8 @@ export default function About () {
             </span>
           </Balancer>
           <Balancer as='p' className='text-sm sm:text-base sm:px-16 text-muted-foreground'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, deleniti maiores ut
-            porro nesciunt quibusdam, laudantium quos necessitatibus quod veniam, culpa distinctio
-            consequuntur modi et praesentium voluptates beatae tenetur eligendi.
+            No solo somos consultores; nos consideramos parte integral de tu equipo. Nos adentrarnos
+            en la esencia de tu negocio, descubriendo las complejidades sutiles que caracterizan a tu negocio.
           </Balancer>
         </div>
         <div className='space-y-8 md:space-y-12'>
