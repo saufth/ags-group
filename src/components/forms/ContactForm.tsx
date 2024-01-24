@@ -10,7 +10,7 @@ export interface MailerData {
   email: string
   message: string
 }
-const recaptchaSitekey = String(process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_KEY)
+const recaptchaSitekey = String(process.env.NEXT_PUBLIC_RECAPTCHA_SITE)
 
 export default function ContactForm () {
   const [modalMessageState, setModalMessageState] = useState<string>('')
@@ -66,9 +66,9 @@ export default function ContactForm () {
         onSubmit={sendEmail}
         ref={formRef}
       >
-        <Input type='text' label='Nombre' min={6} max={128} required />
-        <Input type='email' label='Correo electrónico' min={8} max={128} required />
-        <Textarea placeholder='Cuéntanos acerca de tu proyecto' min={6} max={512} required />
+        <Input id='contactName' name='contactName' type='text' label='Nombre' min={6} max={128} required />
+        <Input id='contactEmail' name='contactEmail' type='email' label='Correo electrónico' min={8} max={128} required />
+        <Textarea id='contactMessage' name='contactMessage' placeholder='Cuéntanos acerca de tu proyecto' min={6} max={512} required />
         <div className='flex justify-center' />
         <div className='flex flex-col items-center gap-y-8'>
           <div className='max-w-fit'>
