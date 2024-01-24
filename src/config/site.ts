@@ -1,4 +1,4 @@
-export const domain = 'agsgroup.com'
+export const domain = 'agsgroup.mx'
 
 export const siteConfig = {
   name: 'AGS Group',
