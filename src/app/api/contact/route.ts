@@ -8,7 +8,7 @@ interface MailerData {
   message: string
 }
 
-const noreplyEmail = `no-reply@${domain}`
+const noreplyEmail = `noreply@${domain}`
 const subject = 'Nuevo mensaje desde formulario web'
 
 export async function POST (request: Request) {
