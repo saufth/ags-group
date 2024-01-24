@@ -28,7 +28,7 @@ export async function POST (request: Request) {
     secure: true, // true for 465, false for other ports
     auth: {
       user: noreplyEmail,
-      pass: process.env.GMAIL_APP_PASS
+      pass: String(process.env.GMAIL_APP_PASS)
     }
   })
 
