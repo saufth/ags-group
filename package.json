@@ -5,8 +5,8 @@
   "homepage": "https://agsgroup.com/",
   "description": "AGS Group official website",
   "engines": {
-    "node": "18.x",
-    "pnpm": "8.x",
+    "node": "20.x",
+    "pnpm": "9.x",
     "yarn": "please-use-pnpm",
     "npm": "please-use-pnpm"
   },
