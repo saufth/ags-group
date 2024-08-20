@@ -2,7 +2,7 @@
   "name": "ags-group",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://agsgroup.com/",
+  "homepage": "https://agsgroup.com",
   "description": "AGS Group official website",
   "engines": {
     "node": "20.x",
