@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/Button'
 import Video from '@/components/Video'
-import { Balancer } from 'react-wrap-balancer'
 import Image from 'next/image'
 import { siteConfig } from '@/config/site'
 import { Icons } from '@/components/Icons'
+import Link from 'next/link'
 
 const services = [
   {
@@ -50,31 +50,33 @@ export default function Home () {
         <div className='h-xl px-4 md:px-6 mx-auto pt-16 sm:pt-32 relative'>
           <div className='flex flex-col items-start sm:items-start gap-y-6'>
             <div className='font-primary space-y-6'>
-              <Balancer as='h1' className='text-h1'>
+              <h1 className='text-h1'>
                 {siteConfig.description}
-              </Balancer>
-              <Balancer as='p' className='text-sm sm:text-lg font-medium md:pr-32'>
+              </h1>
+              <p className='text-sm sm:text-lg font-medium md:pr-32'>
                 Transforma tu negocio con estrategias innovadoras y personalizadas.
-              </Balancer>
+              </p>
             </div>
-            <Button className='mt-2 sm:mt-4 font-medium' color='primary' size='lg'>
-              Contáctanos
-            </Button>
+            <Link href='/contacto'>
+              <Button className='mt-2 sm:mt-4 font-medium' color='primary' size='lg'>
+                Contáctanos
+              </Button>
+            </Link>
           </div>
         </div>
         <Video />
       </section>
       <section className='max-w-7xl mx-auto pb-12 lg:pb-24 px-4 sm:px-6 space-y-8 md:space-y-16'>
         <div className='max-w-3xl mx-auto space-y-3 sm:space-y-4 text-center'>
-          <Balancer as='h2' className='mx-auto'>
+          <h2 className='mx-auto'>
             <span className='text-h2'>
               Nuestras soluciones
             </span>
-          </Balancer>
-          <Balancer as='p' className='text-sm sm:text-base text-muted-foreground'>
+          </h2>
+          <p className='text-sm sm:text-base text-muted-foreground'>
             Cada uno de los servicios que ofrecemos desempeña un papel fundamental en el éxito de su empresa, ya que contribuyen a definir
             su identidad, entender a su público, promocionar sus productos o servicios, tomar decisiones informadas y aumentar sus ventas.
-          </Balancer>
+          </p>
           <div className='pt-4'>
             <Image
               src='/images/solutions1.webp'
@@ -124,12 +126,12 @@ export default function Home () {
                     <service.Icon />
                   </div>
                   <div className='px-2 space-y-2 text-center md:text-left'>
-                    <Balancer as='h3' className='text-h3'>
+                    <h3 className='text-h3'>
                       {service.heading}
-                    </Balancer>
-                    <Balancer as='p' className='text-xs sm:text-sm text-muted-foreground'>
+                    </h3>
+                    <p className='text-xs sm:text-sm text-muted-foreground'>
                       {service.description}
-                    </Balancer>
+                    </p>
                   </div>
                 </article>
               )
@@ -137,9 +139,11 @@ export default function Home () {
           </div>
         </div>
         <div className='flex justify-center md:pt-16'>
-          <Button className='w-full sm:w-auto mt-2 sm:mt-4 font-medium' color='primary' size='lg'>
-            Contáctanos
-          </Button>
+          <Link href='/contacto'>
+            <Button className='w-full sm:w-auto mt-2 sm:mt-4 font-medium' color='primary' size='lg'>
+              Contáctanos
+            </Button>
+          </Link>
         </div>
       </section>
     </>

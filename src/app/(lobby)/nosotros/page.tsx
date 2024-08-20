@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/Button'
 import { Icons } from '@/components/Icons'
-import { Balancer } from 'react-wrap-balancer'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
+import Link from 'next/link'
 
 const aboutUs = [
   {
@@ -57,16 +57,18 @@ export default function About () {
         <div className='h-xl px-4 md:px-6 mx-auto pt-16 relative'>
           <div className='flex flex-col items-start sm:items-start gap-y-6'>
             <div className='font-primary space-y-6'>
-              <Balancer as='h1' className='text-h1'>
+              <h1 className='text-h1'>
                 Transformamos visiones en realidades
-              </Balancer>
-              <Balancer as='p' className='text-sm sm:text-lg font-medium md:pr-32'>
+              </h1>
+              <p className='text-sm sm:text-lg font-medium md:pr-32'>
                 Tu visión es nuestra misión, y tu éxito, nuestro propósito supremo.
-              </Balancer>
+              </p>
             </div>
-            <Button className='mt-2 sm:mt-4 font-medium' color='primary' size='lg'>
-              Contáctanos
-            </Button>
+            <Link href='/contacto'>
+              <Button className='mt-2 sm:mt-4 font-medium' color='primary' size='lg'>
+                Contáctanos
+              </Button>
+            </Link>
           </div>
         </div>
         <div className='absolute inset-0 left-auto w-full sm:w-3/5 h-[512px] overflow-hidden flex items-center sm:rounded-xl -z-10'>
@@ -82,15 +84,15 @@ export default function About () {
       </section>
       <section className='max-w-7xl mx-auto pb-12 lg:pb-24 px-4 sm:px-6 space-y-8 md:space-y-16'>
         <div className='text-center space-y-3 sm:space-y-6'>
-          <Balancer as='h2' className='mx-auto'>
+          <h2 className='mx-auto'>
             <span className='text-h2'>
               Acerca de nosotros
             </span>
-          </Balancer>
-          <Balancer as='p' className='text-sm sm:text-base sm:px-16 text-muted-foreground'>
+          </h2>
+          <p className='text-sm sm:text-base sm:px-16 text-muted-foreground'>
             No solo somos consultores; nos consideramos parte integral de tu equipo. Nos adentrarnos
             en la esencia de tu negocio, descubriendo las complejidades sutiles que caracterizan a tu negocio.
-          </Balancer>
+          </p>
         </div>
         <div className='space-y-8 md:space-y-12'>
           {aboutUs.map((about, key) => {
@@ -101,13 +103,13 @@ export default function About () {
                 <div className={cn('md:w-1/2 px-2 space-y-3 md:space-y-4 text-center md:text-left', (isPair ? 'md:pl-12 md:pr-4' : 'md:pr-12 md:pl-4'))}>
                   <div className='flex items-center gap-x-2 sm:gap-x-3 justify-center md:justify-start'>
                     <about.Icon />
-                    <Balancer as='h3' className='text-h3'>
+                    <h3 className='text-h3'>
                       {about.heading}
-                    </Balancer>
+                    </h3>
                   </div>
-                  <Balancer as='p' className='text-xs sm:text-sm text-muted-foreground'>
+                  <p className='text-xs sm:text-sm text-muted-foreground'>
                     {about.description}
-                  </Balancer>
+                  </p>
                 </div>
                 <div className='md:w-1/2'>
                   <Image
@@ -126,25 +128,25 @@ export default function About () {
       <section className='overflow-hidden relative border-y'>
         <div className='max-w-7xl mx-auto py-12 lg:py-24 px-4 sm:px-6 space-y-12 sm:space-y-16 relative'>
           <div className='text-center space-y-3 sm:space-y-6'>
-            <Balancer as='h2' className='mx-auto'>
+            <h2 className='mx-auto'>
               <span className='text-h2'>
                 Nuestros valores
               </span>
-            </Balancer>
-            <Balancer as='p' className='text-sm sm:text-base sm:px-16 text-muted-foreground'>
+            </h2>
+            <p className='text-sm sm:text-base sm:px-16 text-muted-foreground'>
               Nos enorgullece cultivar y vivir nuestros principios fundamentales cada día para transmitirlos
               con nuestros clientes y sumar a su cultura organizacional.
-            </Balancer>
+            </p>
           </div>
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-16 px-4 sm:px-0'>
             {values.map((value, key) => (
               <div className='flex flex-col items-center gap-y-2 text-center' key={key}>
-                <Balancer as='h3' className='text-h3'>
+                <h3 className='text-h3'>
                   {value.heading}
-                </Balancer>
-                <Balancer as='p' className='text-xs sm:text-sm text-muted-foreground'>
+                </h3>
+                <p className='text-xs sm:text-sm text-muted-foreground'>
                   {value.description}
-                </Balancer>
+                </p>
               </div>
             ))}
           </div>
@@ -154,13 +156,13 @@ export default function About () {
       <section>
         <div className='max-w-3xl mx-auto py-12 lg:py-24 px-4 sm:px-6 space-y-4 sm:space-y-6'>
           <div className='text-center space-y-3 sm:space-y-6'>
-            <Balancer as='h2' className='mx-auto'>
+            <h2 className='mx-auto'>
               <span className='text-h2'>
                 Nuestra historia
               </span>
-            </Balancer>
+            </h2>
           </div>
-          <Balancer as='div' className='text-sm sm:text-base text-center text-muted-foreground space-y-4 sm:space-y-6 px-6'>
+          <div className='text-sm sm:text-base text-center text-muted-foreground space-y-4 sm:space-y-6 px-6'>
             <p>
               En un mundo saturado de mensajes y marcas, vimos una oportunidad: ayudar a las empresas a destacarse
               estratégicamente. No solo queríamos que pudieran competir, sino que se diferenciaran drásticamente de
@@ -180,7 +182,7 @@ export default function About () {
               La trayectoria de AGS GROUP es una de visión, determinación y, sobre todo, la creencia inquebrantable de
               que  juntos podemos construir un futuro empresarial más sólido y prometedor.
             </p>
-          </Balancer>
+          </div>
         </div>
       </section>
     </>
