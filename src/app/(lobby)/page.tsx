@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/Button'
 import Video from '@/components/Video'
+import { Balancer } from 'react-wrap-balancer'
 import Image from 'next/image'
 import { siteConfig } from '@/config/site'
 import { Icons } from '@/components/Icons'
-import Link from 'next/link'
 
 const services = [
   {
@@ -43,19 +43,19 @@ const services = [
   }
 ] as const
 
-export default function Home () {
+export default function Home() {
   return (
     <>
       <section className='max-w-7xl mx-auto relative z-20'>
         <div className='h-xl px-4 md:px-6 mx-auto pt-16 sm:pt-32 relative'>
           <div className='flex flex-col items-start sm:items-start gap-y-6'>
             <div className='font-primary space-y-6'>
-              <h1 className='text-h1'>
+              <Balancer as='h1' className='text-h1'>
                 {siteConfig.description}
-              </h1>
-              <p className='text-sm sm:text-lg font-medium md:pr-32'>
+              </Balancer>
+              <Balancer as='p' className='text-sm sm:text-lg font-medium md:pr-32'>
                 Transforma tu negocio con estrategias innovadoras y personalizadas.
-              </p>
+              </Balancer>
             </div>
             <Link href='/contacto'>
               <Button className='mt-2 sm:mt-4 font-medium' color='primary' size='lg'>
@@ -68,15 +68,15 @@ export default function Home () {
       </section>
       <section className='max-w-7xl mx-auto pb-12 lg:pb-24 px-4 sm:px-6 space-y-8 md:space-y-16'>
         <div className='max-w-3xl mx-auto space-y-3 sm:space-y-4 text-center'>
-          <h2 className='mx-auto'>
+          <Balancer as='h2' className='mx-auto'>
             <span className='text-h2'>
               Nuestras soluciones
             </span>
-          </h2>
-          <p className='text-sm sm:text-base text-muted-foreground'>
+          </Balancer>
+          <Balancer as='p' className='text-sm sm:text-base text-muted-foreground'>
             Cada uno de los servicios que ofrecemos desempeña un papel fundamental en el éxito de su empresa, ya que contribuyen a definir
             su identidad, entender a su público, promocionar sus productos o servicios, tomar decisiones informadas y aumentar sus ventas.
-          </p>
+          </Balancer>
           <div className='pt-4'>
             <Image
               src='/images/solutions1.webp'
@@ -126,12 +126,12 @@ export default function Home () {
                     <service.Icon />
                   </div>
                   <div className='px-2 space-y-2 text-center md:text-left'>
-                    <h3 className='text-h3'>
+                    <Balancer as='h3' className='text-h3'>
                       {service.heading}
-                    </h3>
-                    <p className='text-xs sm:text-sm text-muted-foreground'>
+                    </Balancer>
+                    <Balancer as='p' className='text-xs sm:text-sm text-muted-foreground'>
                       {service.description}
-                    </p>
+                    </Balancer>
                   </div>
                 </article>
               )

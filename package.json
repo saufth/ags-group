@@ -5,8 +5,8 @@
   "homepage": "https://agsgroup.com/",
   "description": "AGS Group official website",
   "engines": {
-    "node": "20.x",
-    "pnpm": "9.x",
+    "node": "18.x",
+    "pnpm": "8.x",
     "yarn": "please-use-pnpm",
     "npm": "please-use-pnpm"
   },
@@ -21,7 +21,7 @@
     "@tabler/icons-react": "2.34.0",
     "clsx": "2.0.0",
     "framer-motion": "10.16.4",
-    "next": "14.0.0",
+    "next": "13.6.0",
     "next-themes": "0.2.1",
     "nodemailer": "6.9.5",
     "react": "18.2.0",
@@ -39,7 +39,7 @@
     "@types/react-google-recaptcha": "2.1.5",
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
-    "eslint-config-next": "14.0.0",
+    "eslint-config-next": "13.6.0",
     "postcss": "8.4.29",
     "standard": "17.1.0",
     "tailwindcss": "3.3.3",
